@@ -59,6 +59,7 @@ a {
 #header {
     background-color: #16a085;
     color: #fff;
+    text-align: center;
 }
 
 h1 {
@@ -76,11 +77,25 @@ tr:hover {
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
 }
 
+table tr td .del {
+    color: red;
+}
+
+table tr td .del:hover {
+    background-color: red;
+}
+
 
 /* media query */
 
 @media only screen and (max-width: 768px) {
     table {
         width: 90%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        width: 100%;
     }
 }
